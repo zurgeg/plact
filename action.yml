@@ -1,0 +1,10 @@
+name: 'Greet'
+description: 'Greet'
+author: 'PLDev'
+inputs:
+  repo-token:
+    description: 'Token for the repository. Can be passed in using {{ secrets.GITHUB_TOKEN }}'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
